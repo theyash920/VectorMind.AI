@@ -130,3 +130,9 @@ Thumbs.db
 # Assuming dataset might contain large files, but commenting out to let user decide
 # dataset/
 # *.pkl
+
+# Environment files
+*.env
+.env
+python_code/.env
+frontend/.env
