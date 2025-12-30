@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import '../global.css';
+>>>>>>> d9764fa (updated readme)
 import 'react-native-url-polyfill/auto';
 import 'react-native-get-random-values';
 import { CartProvider } from '@/components/CartContext';

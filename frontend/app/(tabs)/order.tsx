@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 import {Text, View,StatusBar,ScrollView,TouchableOpacity } from 'react-native'
 import { useEffect, useState } from 'react';
 import { GestureHandlerRootView} from 'react-native-gesture-handler'
+=======
+import { Text, View, StatusBar, ScrollView, TouchableOpacity } from 'react-native'
+import { useEffect, useState } from 'react';
+import { GestureHandlerRootView } from 'react-native-gesture-handler'
+>>>>>>> d9764fa (updated readme)
 import React from 'react'
 import PageHeader from '@/components/PageHeader'
 import Ionicons from '@expo/vector-icons/Ionicons';
@@ -14,7 +20,11 @@ import { router } from 'expo-router';
 
 const Order = () => {
 
+<<<<<<< HEAD
   const { cartItems, SetQuantityCart,emptyCart } = useCart();
+=======
+  const { cartItems, SetQuantityCart, emptyCart } = useCart();
+>>>>>>> d9764fa (updated readme)
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
@@ -30,7 +40,11 @@ const Order = () => {
   useEffect(() => {
     const total = calculateTotal(products, cartItems);
     setTotalPrice(total);
+<<<<<<< HEAD
   }, [cartItems,products]);
+=======
+  }, [cartItems, products]);
+>>>>>>> d9764fa (updated readme)
 
   useEffect(() => {
     const loadProducts = async () => {
@@ -39,7 +53,11 @@ const Order = () => {
 
         setProducts(productsData);
       } catch (err) {
+<<<<<<< HEAD
         setError("Error fetching products"+err);
+=======
+        setError("Error fetching products" + err);
+>>>>>>> d9764fa (updated readme)
         console.error(err);
       } finally {
         setLoading(false);
@@ -73,6 +91,7 @@ const Order = () => {
         <View className='h-[75%]'>
           <ProductList products={products} quantities={cartItems} setQuantities={SetQuantityCart} totalPrice={totalPrice} />
         </View>
+<<<<<<< HEAD
         
         <View
             className='bg-white rounded-tl-3xl rounded-tr-3xl px-7 pt-3 pb-6'
@@ -90,11 +109,33 @@ const Order = () => {
                 <Text
                         className="text-app_orange_color text-sm font-[Sora-SemiBold] ml-3"
                   >$ {totalPrice === 0 ? 0 : totalPrice+1} 
+=======
+
+        <View
+          className='bg-white rounded-t-[30px] px-8 pt-6 pb-10 shadow-[0_-4px_20px_rgba(0,0,0,0.05)]'
+        >
+          <View
+            className='flex-row justify-between items-center mb-6'
+          >
+            <View className='flex-row items-center'>
+              <View className='bg-[#FFF5EE] p-2 rounded-full mr-3'>
+                <Ionicons name="wallet-outline" size={24} color="#C67C4E" />
+              </View>
+              <View>
+                <Text
+                  className="text-[#242424] text-base font-[Sora-SemiBold]"
+                >Total Amount
+                </Text>
+                <Text
+                  className="text-app_orange_color text-lg font-[Sora-Bold]"
+                >$ {totalPrice === 0 ? 0 : (totalPrice + 1).toFixed(2)}
+>>>>>>> d9764fa (updated readme)
                 </Text>
               </View>
 
             </View>
 
+<<<<<<< HEAD
             <MaterialIcons name="keyboard-arrow-down" size={24} color="black" />
 
           </View>
@@ -107,6 +148,20 @@ const Order = () => {
                 <Text className="text-xl color-white font-[Sora-Regular]">Order</Text> 
           </TouchableOpacity> 
         
+=======
+          </View>
+
+          <TouchableOpacity
+            className={`${totalPrice === 0 ? 'bg-[#F0F0F0]' : 'bg-app_orange_color shadow-lg shadow-orange-200'} w-full rounded-2xl items-center justify-center py-4 active:opacity-90`}
+            disabled={totalPrice === 0}
+            onPress={orderNow}
+          >
+            <Text className={`text-lg font-[Sora-SemiBold] ${totalPrice === 0 ? 'text-gray-400' : 'text-white'}`}>
+              Checkout
+            </Text>
+          </TouchableOpacity>
+
+>>>>>>> d9764fa (updated readme)
         </View>
 
       </View>

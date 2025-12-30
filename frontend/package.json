@@ -11,6 +11,10 @@
     "lint": "expo lint"
   },
   "dependencies": {
+<<<<<<< HEAD
+=======
+    "@expo/metro-runtime": "~4.0.1",
+>>>>>>> d9764fa (updated readme)
     "@expo/vector-icons": "~14.0.4",
     "@react-native-firebase/firestore": "^23.5.0",
     "@react-navigation/bottom-tabs": "^7.2.0",
@@ -30,12 +34,19 @@
     "expo-symbols": "~0.2.2",
     "expo-system-ui": "~4.0.9",
     "expo-web-browser": "~14.0.2",
+<<<<<<< HEAD
+=======
+    "firebase": "^12.6.0",
+>>>>>>> d9764fa (updated readme)
     "nativewind": "^4.2.1",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-native": "0.76.9",
     "react-native-gesture-handler": "~2.20.2",
+<<<<<<< HEAD
     "firebase": "^12.6.0",
+=======
+>>>>>>> d9764fa (updated readme)
     "react-native-get-random-values": "^1.11.0",
     "react-native-reanimated": "~3.16.1",
     "react-native-responsive-screen": "^1.4.2",

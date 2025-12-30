@@ -13,7 +13,8 @@ class GuardAgent():
             base_url=os.getenv("EMBEDDING_URL"),
         )
         self.model_name = os.getenv("MODEL_NAME")
-    
+        print(f"GuardAgent initialized with model: {self.model_name}")
+     
     def get_response(self,messages):
         messages = deepcopy(messages)
 

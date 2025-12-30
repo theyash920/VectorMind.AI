@@ -13,6 +13,11 @@
     "**/*.ts",
     "**/*.tsx",
     ".expo/types/**/*.ts",
+<<<<<<< HEAD
     "expo-env.d.ts"
+=======
+    "expo-env.d.ts",
+    "nativewind-env.d.ts"
+>>>>>>> d9764fa (updated readme)
   ]
 }
