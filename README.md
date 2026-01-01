@@ -84,7 +84,3 @@ Each folder has their own getting started section. So this way we can deploy the
 
 
 
-
-Try this from 6:04:00 and run all msges first
-
-Python 3.10.19
